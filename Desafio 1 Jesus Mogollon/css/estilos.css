@@ -1,0 +1,35 @@
+* { color: white; font-size: 60px; }
+/*Fondos*/
+.img-li { background: #aed6f1; }
+#dos { background: #ec7063; }
+#tres{ background: #81d73d; }
+#cuatro { background: #9b59b6; }
+figure > .img-li
+{
+  width: 80%;
+  height: 50px;
+  margin-top: 25px;
+}
+nav > .img-li
+{
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+}
+.items
+{
+  height: 280px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#uno
+{
+  background: #3498db;
+  height: 150px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

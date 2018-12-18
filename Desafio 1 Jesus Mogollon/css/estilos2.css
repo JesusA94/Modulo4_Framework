@@ -1,0 +1,29 @@
+#logo
+{  
+    background: #92beff;
+	margin: 15px auto;
+    height: 105px;
+}
+/*Fondos*/
+#parte-header,#parte-footer { background: #323031;}
+#li:first-child {background: #ffcf73;}
+#li:nth-child(2) { background: #7e73fe;}
+#li:nth-child(3) {background: #ff73ba;}
+#li:nth-child(4) {background: #bfbfbf;}
+#parte-header { margin: auto; height: 35px; }
+#li { margin: auto; height: 300px;}
+#contenedor1{ height: 800px; margin: 30px auto;  }
+#contenedor2{ height: 500px; margin: 30px auto;  }
+#parte-aside
+{
+	margin: 30px auto;
+	height: 750px;
+	background: #ffcf73;
+}
+#articulos
+{
+	margin-bottom: 50px;
+	height: 350px;
+	background: #92beff;
+}
+#parte-footer { margin-top: 50px; height: 200px; }

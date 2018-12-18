@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agencia de Viajes</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/png" href="img/logo.png"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <figure class="row">
+                    <img src="img/logo.png" alt="" class="img-responsive logo-img">
+                </figure>
+            </div>
+            <div class="collapse navbar-collapse col-sm-9" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right navbar-text">
+                    <li class="active-link"><a href="#">Inicio</a></li>
+                    <li>
+                        <a class="dropdown-toggle"
+                        data-toggle="dropdown">Servicios 
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <span id="ul-span" class="glyphicon glyphicon-triangle-top"></span>
+                            <li class="hover-link"><a href="#">Boletos Aéreos</a></li>
+                            <li class="hover-link"><a href="#">Cruceros</a></li>
+                            <li class="hover-link"><a href="#">Hoteles</a></li>
+                            <li class="hover-link"><a href="#">Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover-link"><a href="#">Destinos</a></li>
+                    <li class="hover-link"><a href="#">Galería</a></li>
+                    <li class="hover-link"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="banner" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <div class="title-position" id="mover-titulo">
+                    <h1><span class="grey-characaters">Vive en</span></h1><h1>Aventuras</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" id="search-form" class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <div class="form-group">
+                    <div class="radio col-xs-12 col-sm-8">
+                        <label for=""><input type="radio" name="tipo-viaje"> Viaje de Ida y Vuelta</label>
+                        <label for=""><input type="radio" name="tipo-viaje"> Solo Ida</label>
+                        <label for=""><input type="radio" name="tipo-viaje"> Multidestino</label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <div class="checkbox">
+                            <label for=""><input type="checkbox"> Solo Vuelos Directos</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-4">
+                        <label for="desde">Desde</label>
+                        <input type="text" name="desde" class="form-control" placeholder="Ej: Barquisimeto">
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-4">
+                        <label for="hasta">Hasta</label>
+                        <input type="text" name="hasta" class="form-control" placeholder="Ej: Miami">
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-4">
+                        <label for="clase">Clase</label>
+                        <select class="form-control" id="clase">
+                            <option value="economica">Económica</option>
+                            <option value="primera">Primera Clase</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-3">
+                        <label for="duracion">Duración</label>
+                        <select class="form-control" id="duracion">
+                            <option value="dia">1 Día</option>
+                            <option value="semana">1 Semana</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-3">
+                        <label for="adultos">Adultos</label>
+                        <input type="number" name="adultos" class="form-control" placeholder="0">
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-3">
+                        <label for="ninos">Niños</label>
+                        <input type="number" name="ninos" class="form-control" placeholder="0">
+                    </div>
+                    <div class="col-xs-12 col-sm-3" id="search-btn-div">
+                        <button class="btn btn-success btn-block btn-lg"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="container col-xs-12 col-sm-10 col-sm-offset-1" id="services">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 remove-padding">
+            <div class="row">
+                <div class="cols-xs-12">
+                    <div class="row">
+                        <h2>Servicios</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id>
+                <div class="cols-xs-12 col-sm-3">
+                    <a href="#">
+                        <div class="service-item">
+                            <span class="glyphicon glyphicon-plane"></span>
+                            <p>Boletos Aéreos</p>
+                        </div>  
+                    </a>
+                </div>
+                <div class="cols-xs-12 col-sm-3">
+                    <a href="#">
+                        <div class="service-item">
+                            <span class="glyphicon glyphicon-globe"></span>
+                            <p>Cruceros</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cols-xs-12 col-sm-3">
+                    <a href="#">
+                        <div class="service-item">
+                            <span class="glyphicon glyphicon-bed"></span>
+                            <p>Hoteles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cols-xs-12 col-sm-3">
+                    <a href="#">
+                        <div class="service-item">
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            <p>Boletos Aéreos</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="photo">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 photo-box" id="photo1">
+                <div class="overlay">
+                    <p>FRANCIA</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 photo-box" id="photo2">
+                <div class="overlay">
+                    <p>JAPON</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 photo-box" id="photo3">
+                <div class="overlay">
+                    <p>RUSIA</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 photo-box" id="photo4">
+                <div class="overlay">
+                    <p>INGLATERRA</p>
+                </div>
+            </div>
+        </img>
+    </section>
+   
+    <footer>
+        <p>©CADI F1 2018. Todos los Derechos Reservados</p>
+    </footer>   
+</body>
+</html>
